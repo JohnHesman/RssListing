@@ -1,0 +1,14 @@
+﻿{
+    gridEditors: [
+        {
+            name: "Rss Listing",
+            alias: "rssLinsting",
+            view: "~/App_Plugins/RssListing/rssListing.editor.html",
+            render:  "~/App_Plugins/RssListing/Views/rssListing.cshtml",
+            icon: "icon-list color-red"
+        }
+    ],
+    javascript:[
+        "~/App_Plugins/RssListing/rssListing.controller.js"
+    ]
+}

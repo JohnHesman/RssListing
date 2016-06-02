@@ -1,0 +1,22 @@
+﻿@using System.ServiceModel.Syndication
+@using System.Xml
+@model dynamic
+
+<h3>@Model.title</h3>
+@if (!string.IsNullOrWhiteSpace((string)Model.feedUrl))
+{
+    var feed = XmlReader.Create((string)Model.feedUrl);
+    var articles = SyndicationFeed.Load(feed);
+    feed.Close();
+
+
+    foreach (var article in articles.Items)
+    {
+        <div class="row">
+            <h4><a href="@article.Links[0].Uri">@article.Title.Text</a></h4>
+            <div>
+                @Html.Raw(article.Summary.Text)
+            </div>
+        </div>
+    }
+}
