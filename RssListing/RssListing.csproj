@@ -76,9 +76,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App_Plugins\RssListing\package.manifest" />
-    <None Include="App_Plugins\RssListing\Views\rssListing.cshtml" />
-    <None Include="App_Plugins\RssListing\Views\Web.config" />
+    <Content Include="App_Plugins\RssListing\package.manifest" />
+    <Content Include="App_Plugins\RssListing\Views\rssListing.cshtml" />
+    <Content Include="App_Plugins\RssListing\Views\Web.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

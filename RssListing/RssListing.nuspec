@@ -6,12 +6,15 @@
     <title>$title$</title>
     <authors>dotnetjohn</authors>
     <owners>dotnetjohn</owners>
-    <licenseUrl>https://github.com/dotnetjohn/RssGridEditor/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://github.com/dotnetjohn/RssGridEditor</projectUrl>
+    <licenseUrl>https://github.com/dotnetjohn/RssListing/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/dotnetjohn/RssListing</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A RSS listing control for the Umbraco Grid Layout</description>
     <releaseNotes>Initial Release</releaseNotes>
     <copyright>Copyright dotnetjohn 2016</copyright>
     <tags>Umbraco RSS</tags>
   </metadata>
+  <files>
+    <file src="App_Plugins\**\*.*" target="" />
+  </files>
 </package>
