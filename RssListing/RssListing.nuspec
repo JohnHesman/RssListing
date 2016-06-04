@@ -3,14 +3,14 @@
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <title>$title$</title>
+    <title>Umbraco Grid RssListing</title>
     <authors>dotnetjohn</authors>
     <owners>dotnetjohn</owners>
     <licenseUrl>https://github.com/dotnetjohn/RssListing/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/dotnetjohn/RssListing</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A RSS listing control for the Umbraco Grid Layout</description>
-    <releaseNotes>Initial Release</releaseNotes>
+    <releaseNotes>Updated the editor layout so that the controls line up</releaseNotes>
     <copyright>Copyright dotnetjohn 2016</copyright>
     <tags>Umbraco RSS</tags>
   </metadata>
