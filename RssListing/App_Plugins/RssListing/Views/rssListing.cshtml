@@ -1,21 +1,18 @@
-﻿@using System.ServiceModel.Syndication
-@using System.Xml
+﻿@using RssListing.WebApi
 @model dynamic
 
 <h3>@Model.title</h3>
 @if (!string.IsNullOrWhiteSpace((string)Model.feedUrl))
 {
-    var feed = XmlReader.Create((string)Model.feedUrl);
-    var articles = SyndicationFeed.Load(feed);
-    feed.Close();
+    var articles = RssListing.GetListingItems((string)Model.feedUrl);
 
 
-    foreach (var article in articles.Items)
+    foreach (var article in articles)
     {
         <div class="row">
-            <h4><a href="@article.Links[0].Uri">@article.Title.Text</a></h4>
+            <h4><a href="@article.Url">@article.Title</a></h4>
             <div>
-                @Html.Raw(article.Summary.Text)
+                @Html.Raw(article.Summary)
             </div>
         </div>
     }

@@ -10,11 +10,15 @@
     <projectUrl>https://github.com/dotnetjohn/RssListing</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>A RSS listing control for the Umbraco Grid Layout</description>
-    <releaseNotes>Updated the editor layout so that the controls line up</releaseNotes>
+    <releaseNotes>Added preview of rss feed to admin control</releaseNotes>
     <copyright>Copyright dotnetjohn 2016</copyright>
     <tags>Umbraco RSS</tags>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.ServiceModel" targetFramework="net40" />
+    </frameworkAssemblies>
   </metadata>
   <files>
     <file src="App_Plugins\**\*.*" target="" />
   </files>
+
 </package>

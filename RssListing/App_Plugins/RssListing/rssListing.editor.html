@@ -6,4 +6,12 @@
     <div class="control-group">
         <input id="feedUrl" class="editor-label" type="text" ng-model="control.feedUrl" placeholder="Feed Url..." />
     </div>
+    <h3>Preview</h3>
+    <h3 ng-model="control.title"></h3>
+    <div ng-repeat="item in feedItems">
+        <div class="row">
+            <h4><a href="{{ item.Url }}">{{ item.Title }}</a></h4>
+            <div ng-bind-html="item.Summary"></div>
+        </div>
+    </div>
 </div>
